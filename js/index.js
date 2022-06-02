@@ -9,6 +9,15 @@ const addMe = (e) => {
     newLi.appendChild(info);
     newLi.style.color = colorGen();
     ul.appendChild(newLi);
+    const doneBtn = document.createElement("button");
+    const delBtn = document.createElement("button");
+    doneBtn.innerHTML = "✔️";
+    delBtn.innerHTML = "❌";
+    newLi.appendChild(doneBtn);
+    newLi.appendChild(delBtn);
+    ul.appendChild(newLi);
+    delBtn.addEventListener("click", () => newLi.remove());
+    doneBtn.addEventListener("click", () => newLi.classList.add("done"));
     document.querySelector("#user-info").value = "";
   } else {
     document.querySelector("#user-info").placeholder = "What to do?";
