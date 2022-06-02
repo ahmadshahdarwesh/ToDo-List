@@ -26,10 +26,9 @@ form {
 }
 input,
 button {
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
+  background-color: purple;
+  color: beige;
+  border-radius: 1.5rem;
 }
 #user-info {
   flex: 1 1 0%;
