@@ -5,10 +5,11 @@ const addMe = (e) => {
   let userData = document.querySelector("#user-info").value;
   if (!userData == "") {
     let newLi = document.createElement("li");
-    let info = document.createTextNode8(userData);
+    let info = document.createTextNode(userData);
     newLi.appendChild(info);
     newLi.style.color = colorGen();
     ul.appendChild(newLi);
+    document.querySelector("#user-info").value = "";
   } else {
     document.querySelector("#user-info").placeholder = "What to do?";
   }
