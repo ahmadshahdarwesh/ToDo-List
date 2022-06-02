@@ -8,10 +8,18 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>My ToDo List</h1>
+    <header>
+      <h1>My ToDo List</h1>
+    </header>
     <form>
-      <input type="text" name="userInput" id="user-info" />
-      <input type="submit" value="Add me To the List" />
+      <input
+        type="text"
+        name="userInput"
+        id="user-info"
+        placeholder="What to do?
+        "
+      />
+      <input type="submit" value="Add me To the List" id="add-task" />
     </form>
     <ul class="result"></ul>
     <script src="./js/index.js"></script>
