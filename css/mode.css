@@ -1,0 +1,18 @@
+.light {
+  /* background-color: white; */
+  background-color: rgb(194, 167, 245);
+  color: black;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.day {
+  background-color: white;
+  color: blueviolet;
+}
+.night {
+  background-color: black;
+  color: white;
+}

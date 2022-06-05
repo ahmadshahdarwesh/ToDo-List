@@ -1,3 +1,5 @@
+@import url(./mode.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,18 +7,23 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: beige;
+  background-color: rgb(194, 167, 245);
+  /* background-image: url(../img/pexels-breakingpic-3299.jpg); */
 }
-header {
+.main {
+  /* flex: 1 1 0%; */
+  margin: 0 auto;
+  width: 60%;
+  height: 80%;
+  margin-top: 6rem;
+  /* background-color: white; */
+}
+h1 {
   padding: 3rem 2rem;
   max-width: 80%;
   margin: 0 auto;
-}
-header h1 {
   font-size: 3rem;
   font-weight: 300;
   color: blueviolet;
@@ -24,16 +31,23 @@ header h1 {
 form {
   display: flex;
 }
-input,
-button {
-  background-color: purple;
-  color: beige;
+input {
+  background-color: blueviolet;
+  border: transparent;
+  color: white;
   border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bolder;
+  margin-right: 1rem;
 }
+
 #user-info {
   flex: 1 1 0%;
-  background-color: cadetblue;
+  background-color: rgb(194, 167, 245);
   padding: 1rem;
+  margin-left: 1rem;
+  border: none;
   border-radius: 2rem;
   margin-right: 1.5rem;
   color: blueviolet;
@@ -42,5 +56,49 @@ button {
 #user-info::placeholder {
   color: blueviolet;
 }
-#add-task {
+
+h2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  color: blueviolet;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  list-style-type: none;
+  background-color: white;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+
+li {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+button {
+  border: none;
+  border-radius: 1.5rem;
+  background-color: blueviolet;
+  color: beige;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bold;
+}
+
+.mode {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: right;
+
+  margin-top: 2rem;
+  margin-right: 2rem;
 }

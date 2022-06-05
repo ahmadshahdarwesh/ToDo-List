@@ -8,20 +8,27 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <div class="mode">
+      Night mode 🌙
+      <input type="checkbox" onchange="theme()" name="mood" id="light-dark" />
+    </div>
+    <div class="main">
       <h1>My ToDo List</h1>
-    </header>
-    <form>
-      <input
-        type="text"
-        name="userInput"
-        id="user-info"
-        placeholder="What to do?
+      <form>
+        <input
+          type="text"
+          name="userInput"
+          id="user-info"
+          placeholder="What to do?
         "
-      />
-      <input type="submit" value="Add me To the List" id="add-task" />
-    </form>
-    <ul class="result"></ul>
+        />
+        <input type="submit" value="Add me To the List" id="add-task" />
+      </form>
+      <div class="tasks">
+        <h2>Tasks</h2>
+        <ul class="result"></ul>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
